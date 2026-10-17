@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Answer Chime",
+  "version": "1.0.3",
+  "description": "Plays a chime when ChatGPT finishes answering in any loaded ChatGPT tab.",
+  "permissions": ["storage", "offscreen"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "ChatGPT Answer Chime" },
+  "content_scripts": [{
+    "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}

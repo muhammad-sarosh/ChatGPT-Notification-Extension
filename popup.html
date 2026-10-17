@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Answer Chime</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <h1>Answer Chime</h1>
+  <p>A little heads-up when ChatGPT finishes.</p>
+  <label class="toggle"><span>Completion sounds</span><input id="enabled" type="checkbox" checked></label>
+  <label for="volume">Volume <output id="volumeValue">60%</output></label>
+  <input id="volume" type="range" min="0" max="100" value="60">
+  <button id="test" type="button">Play test sound</button>
+  <p id="status" role="status">Watches all loaded ChatGPT tabs.</p>
+  <button id="diagnose" type="button">Check connected tabs</button>
+  <pre id="diagnostics" aria-live="polite"></pre>
+  <script src="popup.js"></script>
+</body>
+</html>

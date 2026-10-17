@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; font: 14px system-ui, sans-serif; }
+body { width: 280px; margin: 0; padding: 22px; background: #172421; color: #edf5ef; }
+h1 { font-size: 23px; margin: 0 0 6px; }
+p { color: #adbfba; line-height: 1.5; margin: 0 0 22px; }
+label { display: flex; justify-content: space-between; align-items: center; }
+.toggle { padding: 16px 0; border-top: 1px solid #35453e; margin-bottom: 12px; }
+input { accent-color: #8eddb7; }
+input[type=checkbox] { width: 19px; height: 19px; }
+input[type=range] { width: 100%; margin: 15px 0 22px; }
+button { width: 100%; background: #b5f3d3; color: #172421; border: 0; border-radius: 8px; padding: 12px; font: inherit; font-weight: 650; cursor: pointer; }
+button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+#status { font-size: 12px; margin: 14px 0 0; }
+#diagnose { margin-top: 16px; background: #35453e; color: #edf5ef; }
+#diagnostics { white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.5 system-ui; color: #adbfba; }
